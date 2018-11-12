@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<body style="background: #f8f9fa">
+    <div class="container col-10">
+        <form>
+            <h4 class="mb-12"> About you:</h4>
+            <div class="form-row col-12">
+                <div class="form-group col-lg-4 col-sm-12">
+                    <label for="inputFirstName">First name:</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
+                </div>
+                <div class="form-group col-lg-4 col-sm-12">
+                    <label for="inputLastName">Last name:</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Last name" required>
+                </div>  
+            </div>
+            <div class="form-row col-12">
+                <div class="form-group col-lg-8 col-sm-12">
+                    <label for="adress">Adress:</label>
+                    <input type="text" class="form-control" id="adress" placeholder="Adress" required>
+                </div>
+            </div>
+            <div class="form-row col-12">
+                <div class="form-group col-lg-2 col-sm-4">
+                    <label for="city">City:</label>
+                    <select id="City" class="form-control">
+                    <option selected>Kyiv</option>
+                    <option selected>Rivne</option>
+                    <option selected>Lviv</option>
+                    <option selected>Dnipro</option>
+                    <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-2 col-sm-4">
+                    <label for="tel">Tel:</label>
+                    <input type="text" class="form-control" id="tel" placeholder="+38(067)123-45-67" required>
+                </div>
+                <div class="form-group col-lg-1 col-sm-4">
+                    <label for="year">Year:</label>
+                    <input type="number" class="form-control" id="year" placeholder="Year" min="18" max="99" required>
+                </div>
+                <div class="form-group col-lg-3 col-sm-12">
+                    <label for="inlineFormInputGroup">User name:</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                        </div>
+                </div>
+            </div>
+            <div class="form-row col-12">
+                <div class="form-group col-lg-4 col-sm-6">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group col-lg-4 col-sm-6">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div> 
+            </div>                
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label class="form-check-label" for="check">Check me</label>
+            </div>
+            <div class="mb-12">
+               <div>Do you love dogs?</div>
+               <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="yes" value="dogs">
+                    <label class="form-check-label" for="yes">Yes</label>
+               </div>
+               <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="no" value="dogs">
+                    <label class="form-check-label" for="no">No</label>
+               </div>
+            <div class="form-group col-lg-8 col-sm-12">
+                <label for="comment">Comments:</label>
+                <textarea class="form-control" id="comment" rows="3" placeholder="Your comments:"></textarea>
+            </div>
+            <button class="btn btn-primary col-lg-4 col-sm-12" type="submit">Submit</button>
+            <input class="btn btn-primary col-lg-4 col-sm-12" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
